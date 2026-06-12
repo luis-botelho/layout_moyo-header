@@ -1,10 +1,10 @@
-* {
+
+
+body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
 
-body {
   font-family: Roboto, sans-serif;
   font-weight: 500;
 }
@@ -13,29 +13,31 @@ body {
   --primary-color: #00acdc;
 }
 
-header {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   width: 100%;
-  padding: 0 50px;
+
 }
 
-header .logo {
+.logo {
   display: flex;
+  margin-left: 50px;
 }
 
-.logo img {
+.logo-img {
   display: block;
   width: 40px;
   height: 40px;
 }
 
-.menu ul {
+.menu-list{
   display: flex;
   align-items: center;
+  margin-right: 50px;
   list-style: none;
+
 }
 
 .menu-item {
@@ -46,11 +48,12 @@ header .logo {
   margin-right: 0;
 }
 
-.menu ul li a {
+.menu-link{
   position: relative;
 
   display: flex;
   align-items: center;
+  justify-content: center;
 
   height: 60px;
 
@@ -61,12 +64,12 @@ header .logo {
   text-transform: uppercase;
 }
 
-.menu ul .is-active {
+.is-active {
   position: relative;
   color: var(--primary-color);
 }
 
-.menu ul li a:hover {
+.menu-link:hover {
   color: var(--primary-color);
 }
 
